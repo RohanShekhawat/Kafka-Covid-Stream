@@ -1,0 +1,213 @@
+[2020-04-27 03:47:18,534] INFO KafkaConfig values: 
+	advertised.host.name = null
+	advertised.listeners = null
+	advertised.port = null
+	authorizer.class.name = 
+	auto.create.topics.enable = true
+	auto.leader.rebalance.enable = true
+	background.threads = 10
+	broker.id = 0
+	broker.id.generation.enable = true
+	broker.rack = null
+	compression.type = producer
+	connections.max.idle.ms = 600000
+	controlled.shutdown.enable = true
+	controlled.shutdown.max.retries = 3
+	controlled.shutdown.retry.backoff.ms = 5000
+	controller.socket.timeout.ms = 30000
+	create.topic.policy.class.name = null
+	default.replication.factor = 1
+	delete.topic.enable = false
+	fetch.purgatory.purge.interval.requests = 1000
+	group.max.session.timeout.ms = 300000
+	group.min.session.timeout.ms = 6000
+	host.name = 
+	inter.broker.listener.name = null
+	inter.broker.protocol.version = 0.10.2-IV0
+	leader.imbalance.check.interval.seconds = 300
+	leader.imbalance.per.broker.percentage = 10
+	listener.security.protocol.map = SSL:SSL,SASL_PLAINTEXT:SASL_PLAINTEXT,TRACE:TRACE,SASL_SSL:SASL_SSL,PLAINTEXT:PLAINTEXT
+	listeners = null
+	log.cleaner.backoff.ms = 15000
+	log.cleaner.dedupe.buffer.size = 134217728
+	log.cleaner.delete.retention.ms = 86400000
+	log.cleaner.enable = true
+	log.cleaner.io.buffer.load.factor = 0.9
+	log.cleaner.io.buffer.size = 524288
+	log.cleaner.io.max.bytes.per.second = 1.7976931348623157E308
+	log.cleaner.min.cleanable.ratio = 0.5
+	log.cleaner.min.compaction.lag.ms = 0
+	log.cleaner.threads = 1
+	log.cleanup.policy = [delete]
+	log.dir = /tmp/kafka-logs
+	log.dirs = /tmp/kafka-logs
+	log.flush.interval.messages = 9223372036854775807
+	log.flush.interval.ms = null
+	log.flush.offset.checkpoint.interval.ms = 60000
+	log.flush.scheduler.interval.ms = 9223372036854775807
+	log.index.interval.bytes = 4096
+	log.index.size.max.bytes = 10485760
+	log.message.format.version = 0.10.2-IV0
+	log.message.timestamp.difference.max.ms = 9223372036854775807
+	log.message.timestamp.type = CreateTime
+	log.preallocate = false
+	log.retention.bytes = -1
+	log.retention.check.interval.ms = 300000
+	log.retention.hours = 168
+	log.retention.minutes = null
+	log.retention.ms = null
+	log.roll.hours = 168
+	log.roll.jitter.hours = 0
+	log.roll.jitter.ms = null
+	log.roll.ms = null
+	log.segment.bytes = 1073741824
+	log.segment.delete.delay.ms = 60000
+	max.connections.per.ip = 2147483647
+	max.connections.per.ip.overrides = 
+	message.max.bytes = 1000012
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	min.insync.replicas = 1
+	num.io.threads = 8
+	num.network.threads = 3
+	num.partitions = 1
+	num.recovery.threads.per.data.dir = 1
+	num.replica.fetchers = 1
+	offset.metadata.max.bytes = 4096
+	offsets.commit.required.acks = -1
+	offsets.commit.timeout.ms = 5000
+	offsets.load.buffer.size = 5242880
+	offsets.retention.check.interval.ms = 600000
+	offsets.retention.minutes = 1440
+	offsets.topic.compression.codec = 0
+	offsets.topic.num.partitions = 50
+	offsets.topic.replication.factor = 3
+	offsets.topic.segment.bytes = 104857600
+	port = 9092
+	principal.builder.class = class org.apache.kafka.common.security.auth.DefaultPrincipalBuilder
+	producer.purgatory.purge.interval.requests = 1000
+	queued.max.requests = 500
+	quota.consumer.default = 9223372036854775807
+	quota.producer.default = 9223372036854775807
+	quota.window.num = 11
+	quota.window.size.seconds = 1
+	replica.fetch.backoff.ms = 1000
+	replica.fetch.max.bytes = 1048576
+	replica.fetch.min.bytes = 1
+	replica.fetch.response.max.bytes = 10485760
+	replica.fetch.wait.max.ms = 500
+	replica.high.watermark.checkpoint.interval.ms = 5000
+	replica.lag.time.max.ms = 10000
+	replica.socket.receive.buffer.bytes = 65536
+	replica.socket.timeout.ms = 30000
+	replication.quota.window.num = 11
+	replication.quota.window.size.seconds = 1
+	request.timeout.ms = 30000
+	reserved.broker.max.id = 1000
+	sasl.enabled.mechanisms = [GSSAPI]
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.principal.to.local.rules = [DEFAULT]
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism.inter.broker.protocol = GSSAPI
+	security.inter.broker.protocol = PLAINTEXT
+	socket.receive.buffer.bytes = 102400
+	socket.request.max.bytes = 104857600
+	socket.send.buffer.bytes = 102400
+	ssl.cipher.suites = null
+	ssl.client.auth = none
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	unclean.leader.election.enable = true
+	zookeeper.connect = localhost:2181
+	zookeeper.connection.timeout.ms = 6000
+	zookeeper.session.timeout.ms = 6000
+	zookeeper.set.acl = false
+	zookeeper.sync.time.ms = 2000
+ (kafka.server.KafkaConfig)
+[2020-04-27 03:47:18,606] INFO starting (kafka.server.KafkaServer)
+[2020-04-27 03:47:18,608] INFO Connecting to zookeeper on localhost:2181 (kafka.server.KafkaServer)
+[2020-04-27 03:47:18,631] INFO Starting ZkClient event thread. (org.I0Itec.zkclient.ZkEventThread)
+[2020-04-27 03:47:18,639] INFO Client environment:zookeeper.version=3.4.9-1757313, built on 08/23/2016 06:50 GMT (org.apache.zookeeper.ZooKeeper)
+[2020-04-27 03:47:18,640] INFO Client environment:host.name=shivansh18-VirtualBox (org.apache.zookeeper.ZooKeeper)
+[2020-04-27 03:47:18,640] INFO Client environment:java.version=1.8.0_252 (org.apache.zookeeper.ZooKeeper)
+[2020-04-27 03:47:18,640] INFO Client environment:java.vendor=Private Build (org.apache.zookeeper.ZooKeeper)
+[2020-04-27 03:47:18,640] INFO Client environment:java.home=/usr/lib/jvm/java-8-openjdk-amd64/jre (org.apache.zookeeper.ZooKeeper)
+[2020-04-27 03:47:18,641] INFO Client environment:java.class.path=:/home/shivansh18/python-kafka-streaming-twitter-master/deploy/kafka/bin/../libs/aopalliance-repackaged-2.5.0-b05.jar:/home/shivansh18/python-kafka-streaming-twitter-master/deploy/kafka/bin/../libs/argparse4j-0.7.0.jar:/home/shivansh18/python-kafka-streaming-twitter-master/deploy/kafka/bin/../libs/connect-api-0.10.2.1.jar:/home/shivansh18/python-kafka-streaming-twitter-master/deploy/kafka/bin/../libs/connect-file-0.10.2.1.jar:/home/shivansh18/python-kafka-streaming-twitter-master/deploy/kafka/bin/../libs/connect-json-0.10.2.1.jar:/home/shivansh18/python-kafka-streaming-twitter-master/deploy/kafka/bin/../libs/connect-runtime-0.10.2.1.jar:/home/shivansh18/python-kafka-streaming-twitter-master/deploy/kafka/bin/../libs/connect-transforms-0.10.2.1.jar:/home/shivansh18/python-kafka-streaming-twitter-master/deploy/kafka/bin/../libs/guava-18.0.jar:/home/shivansh18/python-kafka-streaming-twitter-master/deploy/kafka/bin/../libs/hk2-api-2.5.0-b05.jar:/home/shivansh18/python-kafka-streaming-twitter-master/deploy/kafka/bin/../libs/hk2-locator-2.5.0-b05.jar:/home/shivansh18/python-kafka-streaming-twitter-master/deploy/kafka/bin/../libs/hk2-utils-2.5.0-b05.jar:/home/shivansh18/python-kafka-streaming-twitter-master/deploy/kafka/bin/../libs/jackson-annotations-2.8.0.jar:/home/shivansh18/python-kafka-streaming-twitter-master/deploy/kafka/bin/../libs/jackson-annotations-2.8.5.jar:/home/shivansh18/python-kafka-streaming-twitter-master/deploy/kafka/bin/../libs/jackson-core-2.8.5.jar:/home/shivansh18/python-kafka-streaming-twitter-master/deploy/kafka/bin/../libs/jackson-databind-2.8.5.jar:/home/shivansh18/python-kafka-streaming-twitter-master/deploy/kafka/bin/../libs/jackson-jaxrs-base-2.8.5.jar:/home/shivansh18/python-kafka-streaming-twitter-master/deploy/kafka/bin/../libs/jackson-jaxrs-json-provider-2.8.5.jar:/home/shivansh18/python-kafka-streaming-twitter-master/deploy/kafka/bin/../libs/jackson-module-jaxb-annotations-2.8.5.jar:/home/shivansh18/python-kafka-streaming-twitter-master/deploy/kafka/bin/../libs/javassist-3.20.0-GA.jar:/home/shivansh18/python-kafka-streaming-twitter-master/deploy/kafka/bin/../libs/javax.annotation-api-1.2.jar:/home/shivansh18/python-kafka-streaming-twitter-master/deploy/kafka/bin/../libs/javax.inject-1.jar:/home/shivansh18/python-kafka-streaming-twitter-master/deploy/kafka/bin/../libs/javax.inject-2.5.0-b05.jar:/home/shivansh18/python-kafka-streaming-twitter-master/deploy/kafka/bin/../libs/javax.servlet-api-3.1.0.jar:/home/shivansh18/python-kafka-streaming-twitter-master/deploy/kafka/bin/../libs/javax.ws.rs-api-2.0.1.jar:/home/shivansh18/python-kafka-streaming-twitter-master/deploy/kafka/bin/../libs/jersey-client-2.24.jar:/home/shivansh18/python-kafka-streaming-twitter-master/deploy/kafka/bin/../libs/jersey-common-2.24.jar:/home/shivansh18/python-kafka-streaming-twitter-master/deploy/kafka/bin/../libs/jersey-container-servlet-2.24.jar:/home/shivansh18/python-kafka-streaming-twitter-master/deploy/kafka/bin/../libs/jersey-container-servlet-core-2.24.jar:/home/shivansh18/python-kafka-streaming-twitter-master/deploy/kafka/bin/../libs/jersey-guava-2.24.jar:/home/shivansh18/python-kafka-streaming-twitter-master/deploy/kafka/bin/../libs/jersey-media-jaxb-2.24.jar:/home/shivansh18/python-kafka-streaming-twitter-master/deploy/kafka/bin/../libs/jersey-server-2.24.jar:/home/shivansh18/python-kafka-streaming-twitter-master/deploy/kafka/bin/../libs/jetty-continuation-9.2.15.v20160210.jar:/home/shivansh18/python-kafka-streaming-twitter-master/deploy/kafka/bin/../libs/jetty-http-9.2.15.v20160210.jar:/home/shivansh18/python-kafka-streaming-twitter-master/deploy/kafka/bin/../libs/jetty-io-9.2.15.v20160210.jar:/home/shivansh18/python-kafka-streaming-twitter-master/deploy/kafka/bin/../libs/jetty-security-9.2.15.v20160210.jar:/home/shivansh18/python-kafka-streaming-twitter-master/deploy/kafka/bin/../libs/jetty-server-9.2.15.v20160210.jar:/home/shivansh18/python-kafka-streaming-twitter-master/deploy/kafka/bin/../libs/jetty-servlet-9.2.15.v20160210.jar:/home/shivansh18/python-kafka-streaming-twitter-master/deploy/kafka/bin/../libs/jetty-servlets-9.2.15.v20160210.jar:/home/shivansh18/python-kafka-streaming-twitter-master/deploy/kafka/bin/../libs/jetty-util-9.2.15.v20160210.jar:/home/shivansh18/python-kafka-streaming-twitter-master/deploy/kafka/bin/../libs/jopt-simple-5.0.3.jar:/home/shivansh18/python-kafka-streaming-twitter-master/deploy/kafka/bin/../libs/kafka_2.11-0.10.2.1.jar:/home/shivansh18/python-kafka-streaming-twitter-master/deploy/kafka/bin/../libs/kafka_2.11-0.10.2.1-sources.jar:/home/shivansh18/python-kafka-streaming-twitter-master/deploy/kafka/bin/../libs/kafka_2.11-0.10.2.1-test-sources.jar:/home/shivansh18/python-kafka-streaming-twitter-master/deploy/kafka/bin/../libs/kafka-clients-0.10.2.1.jar:/home/shivansh18/python-kafka-streaming-twitter-master/deploy/kafka/bin/../libs/kafka-log4j-appender-0.10.2.1.jar:/home/shivansh18/python-kafka-streaming-twitter-master/deploy/kafka/bin/../libs/kafka-streams-0.10.2.1.jar:/home/shivansh18/python-kafka-streaming-twitter-master/deploy/kafka/bin/../libs/kafka-streams-examples-0.10.2.1.jar:/home/shivansh18/python-kafka-streaming-twitter-master/deploy/kafka/bin/../libs/kafka-tools-0.10.2.1.jar:/home/shivansh18/python-kafka-streaming-twitter-master/deploy/kafka/bin/../libs/log4j-1.2.17.jar:/home/shivansh18/python-kafka-streaming-twitter-master/deploy/kafka/bin/../libs/lz4-1.3.0.jar:/home/shivansh18/python-kafka-streaming-twitter-master/deploy/kafka/bin/../libs/metrics-core-2.2.0.jar:/home/shivansh18/python-kafka-streaming-twitter-master/deploy/kafka/bin/../libs/osgi-resource-locator-1.0.1.jar:/home/shivansh18/python-kafka-streaming-twitter-master/deploy/kafka/bin/../libs/reflections-0.9.10.jar:/home/shivansh18/python-kafka-streaming-twitter-master/deploy/kafka/bin/../libs/rocksdbjni-5.0.1.jar:/home/shivansh18/python-kafka-streaming-twitter-master/deploy/kafka/bin/../libs/scala-library-2.11.8.jar:/home/shivansh18/python-kafka-streaming-twitter-master/deploy/kafka/bin/../libs/scala-parser-combinators_2.11-1.0.4.jar:/home/shivansh18/python-kafka-streaming-twitter-master/deploy/kafka/bin/../libs/slf4j-api-1.7.21.jar:/home/shivansh18/python-kafka-streaming-twitter-master/deploy/kafka/bin/../libs/slf4j-log4j12-1.7.21.jar:/home/shivansh18/python-kafka-streaming-twitter-master/deploy/kafka/bin/../libs/snappy-java-1.1.2.6.jar:/home/shivansh18/python-kafka-streaming-twitter-master/deploy/kafka/bin/../libs/validation-api-1.1.0.Final.jar:/home/shivansh18/python-kafka-streaming-twitter-master/deploy/kafka/bin/../libs/zkclient-0.10.jar:/home/shivansh18/python-kafka-streaming-twitter-master/deploy/kafka/bin/../libs/zookeeper-3.4.9.jar (org.apache.zookeeper.ZooKeeper)
+[2020-04-27 03:47:18,642] INFO Client environment:java.library.path=/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib (org.apache.zookeeper.ZooKeeper)
+[2020-04-27 03:47:18,643] INFO Client environment:java.io.tmpdir=/tmp (org.apache.zookeeper.ZooKeeper)
+[2020-04-27 03:47:18,643] INFO Client environment:java.compiler=<NA> (org.apache.zookeeper.ZooKeeper)
+[2020-04-27 03:47:18,643] INFO Client environment:os.name=Linux (org.apache.zookeeper.ZooKeeper)
+[2020-04-27 03:47:18,643] INFO Client environment:os.arch=amd64 (org.apache.zookeeper.ZooKeeper)
+[2020-04-27 03:47:18,643] INFO Client environment:os.version=5.3.0-46-generic (org.apache.zookeeper.ZooKeeper)
+[2020-04-27 03:47:18,643] INFO Client environment:user.name=root (org.apache.zookeeper.ZooKeeper)
+[2020-04-27 03:47:18,643] INFO Client environment:user.home=/root (org.apache.zookeeper.ZooKeeper)
+[2020-04-27 03:47:18,643] INFO Client environment:user.dir=/home/shivansh18/python-kafka-streaming-twitter-master/deploy/kafka (org.apache.zookeeper.ZooKeeper)
+[2020-04-27 03:47:18,644] INFO Initiating client connection, connectString=localhost:2181 sessionTimeout=6000 watcher=org.I0Itec.zkclient.ZkClient@1afd44cb (org.apache.zookeeper.ZooKeeper)
+[2020-04-27 03:47:18,665] INFO Waiting for keeper state SyncConnected (org.I0Itec.zkclient.ZkClient)
+[2020-04-27 03:47:18,668] INFO Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) (org.apache.zookeeper.ClientCnxn)
+[2020-04-27 03:47:18,676] INFO Socket connection established to localhost/127.0.0.1:2181, initiating session (org.apache.zookeeper.ClientCnxn)
+[2020-04-27 03:47:18,725] INFO Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x171b890c3cb0000, negotiated timeout = 6000 (org.apache.zookeeper.ClientCnxn)
+[2020-04-27 03:47:18,727] INFO zookeeper state changed (SyncConnected) (org.I0Itec.zkclient.ZkClient)
+[2020-04-27 03:47:18,916] INFO Cluster ID = UNHI6_O2S1WQlKuckduFog (kafka.server.KafkaServer)
+[2020-04-27 03:47:18,920] WARN No meta.properties file under dir /tmp/kafka-logs/meta.properties (kafka.server.BrokerMetadataCheckpoint)
+[2020-04-27 03:47:18,985] INFO [ThrottledRequestReaper-Fetch], Starting  (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2020-04-27 03:47:18,987] INFO [ThrottledRequestReaper-Produce], Starting  (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2020-04-27 03:47:19,021] INFO Log directory '/tmp/kafka-logs' not found, creating it. (kafka.log.LogManager)
+[2020-04-27 03:47:19,028] INFO Loading logs. (kafka.log.LogManager)
+[2020-04-27 03:47:19,035] INFO Logs loading complete in 7 ms. (kafka.log.LogManager)
+[2020-04-27 03:47:19,147] INFO Starting log cleanup with a period of 300000 ms. (kafka.log.LogManager)
+[2020-04-27 03:47:19,150] INFO Starting log flusher with a default period of 9223372036854775807 ms. (kafka.log.LogManager)
+[2020-04-27 03:47:19,214] INFO Awaiting socket connections on 0.0.0.0:9092. (kafka.network.Acceptor)
+[2020-04-27 03:47:19,219] INFO [Socket Server on Broker 0], Started 1 acceptor threads (kafka.network.SocketServer)
+[2020-04-27 03:47:19,244] INFO [ExpirationReaper-0], Starting  (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2020-04-27 03:47:19,246] INFO [ExpirationReaper-0], Starting  (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2020-04-27 03:47:19,295] INFO Creating /controller (is it secure? false) (kafka.utils.ZKCheckedEphemeral)
+[2020-04-27 03:47:19,309] INFO Result of znode creation is: OK (kafka.utils.ZKCheckedEphemeral)
+[2020-04-27 03:47:19,309] INFO 0 successfully elected as leader (kafka.server.ZookeeperLeaderElector)
+[2020-04-27 03:47:19,424] INFO [ExpirationReaper-0], Starting  (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2020-04-27 03:47:19,427] INFO [ExpirationReaper-0], Starting  (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2020-04-27 03:47:19,440] INFO [ExpirationReaper-0], Starting  (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2020-04-27 03:47:19,456] INFO [GroupCoordinator 0]: Starting up. (kafka.coordinator.GroupCoordinator)
+[2020-04-27 03:47:19,457] INFO [GroupCoordinator 0]: Startup complete. (kafka.coordinator.GroupCoordinator)
+[2020-04-27 03:47:19,461] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 1 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2020-04-27 03:47:19,482] INFO Will not load MX4J, mx4j-tools.jar is not in the classpath (kafka.utils.Mx4jLoader$)
+[2020-04-27 03:47:19,519] INFO Creating /brokers/ids/0 (is it secure? false) (kafka.utils.ZKCheckedEphemeral)
+[2020-04-27 03:47:19,527] INFO Result of znode creation is: OK (kafka.utils.ZKCheckedEphemeral)
+[2020-04-27 03:47:19,528] INFO Registered broker 0 at path /brokers/ids/0 with addresses: EndPoint(shivansh18-VirtualBox,9092,ListenerName(PLAINTEXT),PLAINTEXT) (kafka.utils.ZkUtils)
+[2020-04-27 03:47:19,529] INFO New leader is 0 (kafka.server.ZookeeperLeaderElector$LeaderChangeListener)
+[2020-04-27 03:47:19,529] WARN No meta.properties file under dir /tmp/kafka-logs/meta.properties (kafka.server.BrokerMetadataCheckpoint)
+[2020-04-27 03:47:19,572] INFO Kafka version : 0.10.2.1 (org.apache.kafka.common.utils.AppInfoParser)
+[2020-04-27 03:47:19,572] INFO Kafka commitId : e89bffd6b2eff799 (org.apache.kafka.common.utils.AppInfoParser)
+[2020-04-27 03:47:19,574] INFO [Kafka Server 0], started (kafka.server.KafkaServer)
+[2020-04-27 03:57:19,457] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2020-04-27 04:07:19,459] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2020-04-27 04:17:19,457] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2020-04-27 04:27:19,457] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2020-04-27 04:33:03,497] INFO Topic creation {"version":1,"partitions":{"0":[0]}} (kafka.admin.AdminUtils$)
+[2020-04-27 04:33:03,505] INFO [KafkaApi-0] Auto creation of topic tweets with 1 partitions and replication factor 1 is successful (kafka.server.KafkaApis)
+[2020-04-27 04:33:04,258] INFO [ReplicaFetcherManager on broker 0] Removed fetcher for partitions tweets-0 (kafka.server.ReplicaFetcherManager)
+[2020-04-27 04:33:04,320] INFO Completed load of log tweets-0 with 1 log segments and log end offset 0 in 46 ms (kafka.log.Log)
+[2020-04-27 04:33:04,325] INFO Created log for partition [tweets,0] in /tmp/kafka-logs with properties {compression.type -> producer, message.format.version -> 0.10.2-IV0, file.delete.delay.ms -> 60000, max.message.bytes -> 1000012, min.compaction.lag.ms -> 0, message.timestamp.type -> CreateTime, min.insync.replicas -> 1, segment.jitter.ms -> 0, preallocate -> false, min.cleanable.dirty.ratio -> 0.5, index.interval.bytes -> 4096, unclean.leader.election.enable -> true, retention.bytes -> -1, delete.retention.ms -> 86400000, cleanup.policy -> [delete], flush.ms -> 9223372036854775807, segment.ms -> 604800000, segment.bytes -> 1073741824, retention.ms -> 604800000, message.timestamp.difference.max.ms -> 9223372036854775807, segment.index.bytes -> 10485760, flush.messages -> 9223372036854775807}. (kafka.log.LogManager)
+[2020-04-27 04:33:04,326] INFO Partition [tweets,0] on broker 0: No checkpointed highwatermark is found for partition tweets-0 (kafka.cluster.Partition)
+[2020-04-27 04:37:19,456] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2020-04-27 04:47:19,472] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2020-04-27 04:57:19,461] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2020-04-27 05:07:19,458] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2020-04-27 05:17:19,457] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.GroupMetadataManager)

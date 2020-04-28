@@ -1,0 +1,8 @@
+2020-04-27 05:02:11 SamzaAppMaster$ [INFO] got container id: container_1587939431661_0002_02_000001
+2020-04-27 05:02:12 SamzaAppMaster$ [INFO] got app attempt id: appattempt_1587939431661_0002_000002
+2020-04-27 05:02:12 SamzaAppMaster$ [INFO] got node manager host: shivansh18-VirtualBox
+2020-04-27 05:02:12 SamzaAppMaster$ [INFO] got node manager port: 45511
+2020-04-27 05:02:12 SamzaAppMaster$ [INFO] got node manager http port: 8042
+2020-04-27 05:02:12 SamzaAppMaster$ [INFO] got config: {task.checkpoint.replication.factor=1, systems.kafka.consumer.zookeeper.connect=localhost:2181/, systems.kafka.samza.factory=org.apache.samza.system.kafka.KafkaSystemFactory, serializers.registry.string.class=org.apache.samza.serializers.StringSerdeFactory, task.checkpoint.system=kafka, task.inputs=kafka.tweets, systems.kafka.producer.producer.type=sync, systems.kafka.streams.tweets-parsed.samza.msg.serde=string, yarn.package.path=file:///home/shivansh18/python-kafka-streaming-twitter-master/deploy/deploy.tar.gz, job.factory.class=org.apache.samza.job.yarn.YarnJobFactory, task.checkpoint.factory=org.apache.samza.checkpoint.kafka.KafkaCheckpointManagerFactory, task.class=com.sid.kafka.ParseTwitterStreamTask, systems.kafka.streams.tweets.samza.msg.serde=string, systems.kafka.producer.batch.num.messages=1, systems.kafka.consumer.auto.offset.reset=largest, job.name=twitter-parser, systems.kafka.producer.bootstrap.servers=localhost:9092}
+2020-04-27 05:02:13 ClientHelper [INFO] trying to connect to RM 0.0.0.0:8032
+2020-04-27 05:02:13 RMProxy [INFO] Connecting to ResourceManager at /0.0.0.0:8032

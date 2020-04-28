@@ -1,0 +1,9 @@
+OpenJDK 64-Bit Server VM (25.252-b09) for linux-amd64 JRE (1.8.0_252-8u252-b09-1~18.04-b09), built on Apr 15 2020 18:48:05 by "buildd" with gcc 7.5.0
+Memory: 4k page, physical 4030252k(110224k free), swap 2097148k(1574908k free)
+CommandLine flags: -XX:GCLogFileSize=10241024 -XX:InitialHeapSize=64484032 -XX:MaxHeapSize=805306368 -XX:NumberOfGCLogFiles=10 -XX:+PrintGC -XX:+PrintGCDateStamps -XX:+PrintGCTimeStamps -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseGCLogFileRotation -XX:+UseParallelGC 
+2020-04-27T05:01:39.353+0530: 0.990: [GC (Allocation Failure)  15872K->2278K(60928K), 0.0045814 secs]
+2020-04-27T05:01:40.768+0530: 2.405: [GC (Allocation Failure)  18150K->2868K(60928K), 0.0083711 secs]
+2020-04-27T05:01:42.758+0530: 4.396: [GC (Allocation Failure)  18740K->4070K(60928K), 0.0077623 secs]
+2020-04-27T05:01:43.370+0530: 5.008: [GC (Allocation Failure)  19942K->5938K(60928K), 0.0074866 secs]
+2020-04-27T05:01:43.737+0530: 5.375: [GC (Allocation Failure)  21810K->8101K(60928K), 0.0097771 secs]
+2020-04-27T05:01:44.290+0530: 5.928: [GC (Allocation Failure)  23973K->10484K(79360K), 0.0125082 secs]

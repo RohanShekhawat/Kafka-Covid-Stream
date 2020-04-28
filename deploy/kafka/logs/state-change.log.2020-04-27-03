@@ -1,0 +1,1 @@
+[2020-04-27 03:47:19,709] TRACE Controller 0 epoch 1 received response {error_code=0} for a request sent to broker shivansh18-VirtualBox:9092 (id: 0 rack: null) (state.change.logger)
