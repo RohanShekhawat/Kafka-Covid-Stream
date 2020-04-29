@@ -13,8 +13,7 @@ import tweepy
 import os
 import json
 import argparse
-
-import twitter_credentials
+from credentials import *
 
 class EchoStreamListener(tweepy.StreamListener):
     def __init__(self, api ):
@@ -24,7 +23,7 @@ class EchoStreamListener(tweepy.StreamListener):
     def on_data(self, tweet):
         tweet_data = json.loads(tweet)
         if 'text' in tweet_data:
-            print tweet.rstrip()
+            print(tweet.rstrip())
 
     def on_error(self, status_code):
         return True
@@ -34,8 +33,8 @@ class EchoStreamListener(tweepy.StreamListener):
 
 
 if __name__ == '__main__':
-    auth = tweepy.OAuthHandler(twitter_credentials.CONSUMER_KEY, twitter_credentials.CONSUMER_SECRET)
-    auth.set_access_token(twitter_credentials.ACCESS_TOKEN, twitter_credentials.ACCESS_TOKEN_SECRET)
+    auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
+    auth.set_access_token(access_key, access_secret)
     api = tweepy.API(auth)
     sapi = tweepy.streaming.Stream(
         auth, EchoStreamListener( api=api ))

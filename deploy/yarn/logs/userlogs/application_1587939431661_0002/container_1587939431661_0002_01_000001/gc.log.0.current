@@ -1,3 +1,0 @@
-OpenJDK 64-Bit Server VM (25.252-b09) for linux-amd64 JRE (1.8.0_252-8u252-b09-1~18.04-b09), built on Apr 15 2020 18:48:05 by "buildd" with gcc 7.5.0
-Memory: 4k page, physical 4030252k(127080k free), swap 2097148k(1435208k free)
-CommandLine flags: -XX:GCLogFileSize=10241024 -XX:InitialHeapSize=64484032 -XX:MaxHeapSize=805306368 -XX:NumberOfGCLogFiles=10 -XX:+PrintGC -XX:+PrintGCDateStamps -XX:+PrintGCTimeStamps -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseGCLogFileRotation -XX:+UseParallelGC 
