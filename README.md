@@ -114,7 +114,14 @@ Open browser and go to local yarn resource manager: http://localhost:8088/cluste
 
 ```
 
+## NOTE
+Before pushing the code
 
+```
+rm -rf deploy
+mvn clean
+
+``` 
 
 
 
