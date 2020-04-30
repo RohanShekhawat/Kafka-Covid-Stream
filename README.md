@@ -71,7 +71,15 @@ deploy-script/grid start/stop zookeeper
 ```
 Note - If you face some error while starting kafka just remove the kafka-logs directory from /tmp/ and start it again.
 
-### 5.Start kafka stream
+
+### 5. Update path accoridng to your local system
+Update path in both files present in src/resources directory
+
+```
+yarn.package.path=/home/path/to/KWHY/deploy/deploy.tar.gz
+```
+
+### 6.Start kafka stream
 
 Pull data from twitter using python script and pipe it to kafka producer and bind to 'tweets' topic
 Go to python-scripts directory and run the below command.
@@ -89,7 +97,7 @@ You can simply run the producer also and can provide mannual inputs.
 ```
 if  you encounter error due to impropoer yarn shut down, simply delete /tmp/kafka-logs directory
 
-### 6.Create a consumer without submitting job to yarn
+### 7.Create a consumer without submitting job to yarn
 
 In a new terminal type, to view the stream data run the following command
 
@@ -98,7 +106,7 @@ In a new terminal type, to view the stream data run the following command
 
 ```
 
-### 7.Run the Samza deployment script with correct paths and attributes
+### 8.Run the Samza deployment script with correct paths and attributes
 
 ```
 /home/path/to/KWHY/deploy/bin/run-job.sh --config-factory=org.apache.samza.config.factories.PropertiesConfigFactory --config-path=/home/path/to/KWHY/deploy/conf/twitter-parser.properties
@@ -107,7 +115,7 @@ In a new terminal type, to view the stream data run the following command
 
 Open browser and go to local yarn resource manager: http://localhost:8088/cluster to check status
 
-### 8.Create a consumer after submitting job to yarn and view the stream.
+### 9.Create a consumer after submitting job to yarn and view the stream.
 
 ```
 /home/path/to/KWHY/deploy/kafka/bin/kafka-console-consumer.sh --zookeeper localhost:2181 --topic tweets-parsed
