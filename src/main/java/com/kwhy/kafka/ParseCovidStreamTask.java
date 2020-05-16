@@ -12,7 +12,7 @@ import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
 
-public class ParseTwitterStreamTask implements StreamTask  {
+public class ParseCovidStreamTask implements StreamTask  {
 
     public void process(IncomingMessageEnvelope envelope, MessageCollector collector, TaskCoordinator coordinator) throws Exception {
 
@@ -27,7 +27,7 @@ public class ParseTwitterStreamTask implements StreamTask  {
                 text = "found text == null ||text.trim().isEmpty " ;
             }
 
-            collector.send(new OutgoingMessageEnvelope(new SystemStream("kafka", "tweets-parsed"), text));
+            collector.send(new OutgoingMessageEnvelope(new SystemStream("kafka", "covid-parsed"), text));
         } catch (ParseException pe) {}
 
 

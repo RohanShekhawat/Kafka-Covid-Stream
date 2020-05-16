@@ -157,15 +157,6 @@ if [ "$COMMAND" == "bootstrap" ] && test -z "$SYSTEM"; then
   exit 0
 elif (test -z "$COMMAND" && test -z "$SYSTEM") \
   || ( [ "$COMMAND" == "help" ] || test -z "$COMMAND" || test -z "$SYSTEM"); then
-  echo
-  echo "  Usage.."
-  echo
-  echo "  $ grid"
-  echo "  $ grid bootstrap"
-  echo "  $ grid install [yarn|kafka|zookeeper|all]"
-  echo "  $ grid start [yarn|kafka|zookeeper|all]"
-  echo "  $ grid stop [yarn|kafka|zookeeper|all]"
-  echo
   exit 1
 else
   echo "EXECUTING: $COMMAND $SYSTEM"
