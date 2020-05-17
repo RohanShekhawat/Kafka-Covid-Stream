@@ -15,7 +15,7 @@ echo $JAVA_HOME
 b) Make sure you have write persmission in /home directory or wherever you are cloning the repo.
 
 ```
-git clone https://github.com/Shivansh1805/Karn.git
+git clone https://github.com/Shivansh1805/KHWY.git
 
 ```
 
