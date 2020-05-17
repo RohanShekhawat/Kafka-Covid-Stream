@@ -1,6 +1,6 @@
 # Parse data using Kafka stream with Yarn
 
-This is a distributed streaming application that reads data using Python, and pipes it to Kafka streams. Jobs are run using Yarn, Samza and Zookeeper on Hadoop 2.0
+This is a distributed streaming application that reads covid19 data using Python, and pipes it to Kafka streams. Jobs are run using Yarn, Samza and Zookeeper on Hadoop 2.0
 
 
 ### RUNNING THE CODE
@@ -15,17 +15,7 @@ echo $JAVA_HOME
 b) Make sure you have write persmission in /home directory or wherever you are cloning the repo.
 
 ```
-git clone https://github.com/Shivansh1805/KHWY.git
-
-```
-
-c) For now we generate the data by creating a twitter app through python. So kindly update you twitter app credentials in credentials.py file which is present in python-scripts directory.
-
-```
-consumer_key = ""
-consumer_secret = ""
-access_key = ""
-access_secret = ""
+git clone https://github.com/Shivansh1805/KWHY.git
 
 ```
 
@@ -79,48 +69,35 @@ Update path in both files present in src/resources directory
 yarn.package.path=/home/path/to/KWHY/deploy/deploy.tar.gz
 ```
 
-### 6.Start kafka stream
-
-Pull data from twitter using python script and pipe it to kafka producer and bind to 'tweets' topic
-Go to python-scripts directory and run the below command.
-```
-pip3 install tweepy
-python3 raw-stream.py | /home/path/to/KWHY/deploy/kafka/bin/kafka-console-producer.sh --broker-list localhost:9092 --topic tweets 
+### 6.Run the Samza deployment script with correct paths and attributes
 
 ```
-You can simply run the producer also and can provide mannual inputs.
-
-```
-
-/home/path/to/KWHY/deploy/kafka/bin/kafka-console-producer.sh --broker-list localhost:9092 --topic <topic-name>
-
-```
-if  you encounter error due to impropoer yarn shut down, simply delete /tmp/kafka-logs directory
-
-### 7.Create a consumer without submitting job to yarn
-
-In a new terminal type, to view the stream data run the following command
-
-```
-/home/path/to/KWHY/deploy/kafka/bin/kafka-console-consumer.sh --zookeeper localhost:2181 --topic <topic-name>
-
-```
-
-### 8.Run the Samza deployment script with correct paths and attributes
-
-```
-/home/path/to/KWHY/deploy/bin/run-job.sh --config-factory=org.apache.samza.config.factories.PropertiesConfigFactory --config-path=/home/path/to/KWHY/deploy/conf/twitter-parser.properties
+/home/path/to/KWHY/deploy/bin/run-job.sh --config-factory=org.apache.samza.config.factories.PropertiesConfigFactory --config-path=/home/path/to/KWHY/deploy/conf/covid-parser.properties
 
 ```
 
 Open browser and go to local yarn resource manager: http://localhost:8088/cluster to check status
 
-### 9.Create a consumer after submitting job to yarn and view the stream.
+### 7.Create consumers on two different terminals after submitting job to yarn .
 
 ```
-/home/path/to/KWHY/deploy/kafka/bin/kafka-console-consumer.sh --zookeeper localhost:2181 --topic tweets-parsed
+/home/path/to/KWHY/deploy/kafka/bin/kafka-console-consumer.sh --zookeeper localhost:2181 --topic district-data
+
+/home/path/to/KWHY/deploy/kafka/bin/kafka-console-consumer.sh --zookeeper localhost:2181 --topic state-data
 
 ```
+### 8.Start kafka stream
+
+Pull data from covid19 API using python script and pipe it to kafka producer and bind to 'district-data' & 'state-data' topic
+Go to producer directory and run the below command.
+
+```
+python3 covid-stream.py 
+
+```
+If  you encounter error due to impropoer yarn shut down, simply delete /tmp/kafka-logs directory
+
+### 9. See the streamed results on both the terminals where you launched the consumers.
 
 ## NOTE
 Before pushing the code
@@ -130,6 +107,3 @@ rm -rf deploy
 mvn clean
 
 ``` 
-
-
-
